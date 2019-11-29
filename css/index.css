@@ -1,0 +1,167 @@
+.wrapper{
+  padding: 0!important;
+  margin: 0!important;
+}
+html{
+  padding: 0!important;
+  margin: 0!important;
+}
+.hero-back {
+  min-width: 100%!important;
+  max-width: 100%!important;
+  min-height:100%;
+  height: calc(150vh);
+  background: url(../img/home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  filter: grayscale(20%);
+  padding: 0!important;
+  margin:0 !important;
+}
+.hero-back img {
+  height: 75%;
+  position: absolute;
+  right: 60%;
+  bottom:  0;
+  margin: auto;
+}
+
+.hero-text{
+  min-height: 100vh;
+}
+
+.hero-text h1{
+  font-size: 100px;
+}
+.hero-text p{
+  overflow: visible;
+}
+
+.hero-back2 {
+  min-width: 100%;
+  min-height:100%;
+  height: calc(300vh);
+  background: url(../img/shopping-center.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  filter: grayscale(20%);
+}
+.hero-back2 img{
+  transition: 3s;
+}
+.mountain {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top:  0;
+  margin: auto;
+}
+.figure-1 {
+  width: auto;
+  height: 150vh;
+  position: absolute;
+  left: 0;
+  top:  0;
+  margin: auto;
+}
+.figure-2 {
+  width: auto;
+  height: 150vh;
+  position: absolute;
+  left: 50%;
+  top:   0;
+  margin: auto;
+}
+.figure-3 {
+  width: auto;
+  height: 150vh;
+  position: absolute;
+  right: 0;
+  top:   0;
+  margin: auto;
+}
+.figure-5 {
+  width: auto;
+  height: 150vh;
+  position: absolute;
+  right: 25%;
+  bottom:  0;
+  margin: auto;
+}
+
+.hero-text{
+  min-height: 100vh;
+}
+
+.hero-text h1{
+  font-size: 100px;
+}
+.hero-text p{
+  overflow: visible;
+}
+
+.hero-back3 {
+  max-width: 100%;
+  height: calc(250vh)!important;
+  background: url(../img/street.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  opacity: 0;
+  overflow: hidden;
+}
+.hero3-div{
+  height: 100vh;
+}
+
+.figure-motor {
+  width: auto;
+  position: absolute;
+  left:45%;
+  top:0%;
+  margin: auto;
+  opacity: 0;
+  z-index: 999!important;
+}
+.figure-4 {
+  width: auto;
+  height: 15%;
+  position: absolute;
+  left: 0;
+  top:  20%;
+  margin: auto;
+}
+.hero3-title-left{
+    font-size: 100px;
+    position: absolute;
+    top: 50vh;
+    right:50%;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 5px!important;
+}
+
+.hero3-title-right{
+  font-size: 100px;
+  position: absolute;
+  top: 50vh;
+  left:50%;
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 5px!important;
+}
+.street {
+  position: sticky;
+  object-position: center center;
+  width: 100%;
+  top:0;
+  margin: auto;
+}

@@ -1,0 +1,288 @@
+@font-face {
+    font-family: montserrat;
+    src: url("../font/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: caviar;
+    src: url("../font/CaviarDreams.ttf");
+}
+@font-face {
+    font-family: montserrat;
+    src: url("../font/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: montserrat-bold;
+    src: url("../font/Montserrat-SemiBold.ttf");
+}
+@font-face {
+    font-family: caviar-bold;
+    src: url("../font/CaviarDreams_Bold.ttf");
+}
+@font-face {
+    font-family: questrial;
+    src: url("../font/Questrial-Regular.ttf");
+}
+@font-face {
+    font-family: bizon;
+    src: url("../font/Bizon.otf");
+}
+@font-face {
+    font-family: roboto;
+    src: url("../font/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: google-sans;
+    src: url("../font/GoogleSans-Regular.ttf");
+}
+@font-face {
+    font-family: google-sans-bold;
+    src: url("../font/GoogleSans-Bold.ttf");
+}
+@font-face {
+    font-family: harmonia;
+    src: url("../font/Harmonia Sans W01 Regular.ttf");
+}
+@font-face {
+    font-family: heebo;
+    src: url("../font/Heebo-Bold.ttf");
+}
+.heebo{
+  font-family: heebo;
+}
+.harmonia{
+  font-family: harmonia;
+}
+.google-sans{
+  font-family:google-sans;
+}
+.google-sans-bold{
+  font-family:google-sans-bold;
+}
+.roboto{
+  font-family: roboto;
+}
+.bizon{
+  font-family: bizon;
+}
+.montserrat{
+  font-family: montserrat;
+}
+.montserrat-bold{
+  font-family: montserrat-bold;
+}
+.caviar{
+  font-family: caviar;
+}
+.caviar-bold{
+  font-family: caviar-bold;
+}
+.questrial{
+  font-family: questrial;
+}
+.bold{
+  font-weight: 1200;
+}
+.cart{
+  height: 15px;
+  width: auto;
+}
+.user{
+  height: 20px;
+  width: auto;
+}
+.cart-toggler{
+  height: 20px;
+  width: auto;
+}
+body{
+}
+/*Navbar*/
+.nav-icon{
+  height:40px;
+  margin-left: 7px;
+  opacity: 0.8;
+}
+.navbar{
+  transition: 1s;
+  min-height: 75px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.navbar-brand{
+  font-size: 30px;
+  letter-spacing: 3px;
+  word-spacing: -5px;
+  color: #454545!important;
+  margin-top:-10px;
+}
+.nav-link{
+  font-size: 12px;
+  letter-spacing: .5px;
+}
+
+.landing-carousel{
+    max-height: 100vh;
+    object-fit: cover;
+}
+.black-one{
+  min-height: 100vh;
+}
+/*Grow n Recolor*/
+.grow-parent{
+  overflow-x:  hidden!important;
+  overflow-y:  hidden!important;
+}
+.grow{
+  transition: 1s!important;
+}
+.grow:hover{
+  transform: scale(1.05);
+  transition:1s!important;
+}
+
+.grow-strech{
+  transition: 1s!important;
+}
+
+.grow-strech:hover{
+  transform: scale(1.1);
+  letter-spacing: 10px!important;
+  transition: 1s!important;
+}
+.recolor{
+  filter: grayscale(95%)!important;
+  transition: 1s!important;
+}
+.recolor:hover{
+  filter: grayscale(0%)!important;
+  transition: 1s!important;
+}
+.home-subtitle::after{
+  box-sizing: border-box;
+  display: block;
+  content: "";
+  margin: auto;
+  width: 30px;
+  height: 3px;
+  margin-top:17px;
+  margin-bottom:15px;
+  background: black;
+  opacity: 0.2;
+}
+
+/*background*/
+.bg-dark{
+  background-color: rgba(0,0,0)!important;
+}
+.text-secondary{
+  color: rgba(0,0,0,0.75)!important;
+}
+
+.home-title{
+  font-size: 120px;
+  font-weight: 700;
+  color:white;
+  letter-spacing: 7px;
+  font-family: 'Overpass', sans-serif!important;
+  text-shadow: 1px 1px 7px black, -1px -1px 10px black,2px 2px 7px black ;
+}
+
+.home-1{
+  background-image: url(../img/home.png);
+  background-size: cover;
+  background-position: center center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  filter: grayscale(95%) contrast(90%);
+  transition: 1s;
+}
+
+.home-2{
+  width: 100%;
+  height: calc(100vh);
+  background: url(../img/home-2.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+.collection-1,.collection-2{
+  background-size: cover;
+  background-position: center center;
+  filter: grayscale(95%);
+  min-height: 45vh;
+}
+
+.collection-1{
+    background-image: url(../img/col-1.jpg);
+}
+
+.collection-2{
+  background-image: url(../img/col-2.jpg);
+}
+
+.testi-1{
+  background-image: url("../img/testi-1.jpg");
+  background-size: cover;
+  background-position: center right;
+  min-height:90vh;
+}
+
+
+
+
+
+
+
+
+/*About*/
+.about{
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+}
+
+.about-1 , .about-2 , .about-3{
+  background-size: cover;
+  background-position: center center;
+  filter: grayscale(100%);
+  min-height: 90vh;
+  box-shadow: 0 0 2px 2px white inset;
+}
+
+.about-1{
+  background-image: url("../img/brand.jpg");
+}
+
+.about-2{
+  background-image: url("../img/inspiration.jpg");
+}
+
+.about-3{
+  background-image: url("../img/mission.jpg");
+}
+
+
+.shop img{
+  margin-bottom: 20px;
+  width: 100%;
+  height: 25vh;
+  object-fit: contain;
+}
+.product-title{
+  font-size: 15px;
+  font-weight: 1000;
+}
+
+.product{
+  transition: .5s;
+}
+.product:hover{
+  background-color: rgba(0,0,0,0.1);
+  transition: .5s;
+}
+
+#cart-product-img{
+  max-height: 75px!important;
+}
