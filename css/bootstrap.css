@@ -230,8 +230,7 @@ button {
 }
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.2),0px 0px 5px rgba(0,0,0,0.4),0px 0px 3px rgba(0,0,0,0.3);
 }
 
 input,
@@ -4480,7 +4479,7 @@ input[type="button"].btn-block {
 
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
-  border-color: transparent;
+  border-color: transparent!important;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -6578,7 +6577,13 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: rgba(0,0,0)!important;
+}
+.bg-semi-dark {
+  background-color: #060606!important;
+}
+.bg-low-dark {
+  background-color: rgba(0,0,0,0.1)!important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
