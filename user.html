@@ -27,46 +27,40 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Hazel Quint</title>
 
   </head>
   <body class="text-secondary ">
 
-    <div class="container-fluid navbur text-dark navbar-expand-lg ">
-      <div class="row bg-dark">
-        <div class="col-lg-6 col-md-12 text-center">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">AA</span>
-          </button>
-          <a class="navbar-brand bizon m-auto pt-2" href="index.html">HAZEL QUINT</a>
-          <button class="navbar-toggler ml-auto">
-            <a class="nav-link" href="cart.html"><img class="cart-toggler" src="img/cart.png"> </a>
-          </button>
-        </div>
-        <div class="col-lg-6 my-auto bg-dark">
-          <div class="collapse navbar-collapse questrial" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-5">
-              <li class="nav-item pr-4">
-                <a class="nav-link" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item active pr-4">
-                <a class="nav-link" href="shop.html">SHOP</a>
-              </li>
-              <li class="nav-item pr-4">
-                <a class="nav-link" href="about.html">ABOUT</a>
-              </li>
-              <li class="nav-item pr-3">
-                <a class="nav-link" href="cart.html"><img class="cart" src="img/cart.png"></a>
-              </li>
-              <li class="nav-item pl-1">
-                <a class="nav-link" href="cart.html"><img class="user" src="img/user.png"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="nav-menu2 ml-auto d-lg-block d-none">
       </div>
-    </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand fredericka mx-auto" href="index.html">HAZEL QUINT<img src="img/logo.png" class="logo d-none d-lg-inline-block"></a>
+      <button class="navbar-toggler">
+        <img src="img/cart.png" alt="" class="cart">
+      </button>
+      <div class="collapse navbar-collapse questrial nav-menu" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active mr-3">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item active mr-2">
+            <a class="nav-link" href="shop.html">SHOP</a>
+          </li>
+          <li class="nav-item mr-3 ">
+            <a class="nav-link" href="user.html"><img src="img/user.png" class="user d-lg-inline d-none"> <span class="d-lg-none d-block-">USER</span>&nbsp; JOSIAH </a>
+          </li>
+          <li class="nav-item mr-3 d-lg-block d-none">
+            <a class="nav-link" href="cart.html"><img src="img/cart.png" alt="" class="cart2"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <div class="container text-center my-3 pb-3">
         <ol class="breadcrumb bg-transparent questrial">
@@ -75,9 +69,59 @@
         </ol>
     </div>
 
-    <div class="container">
-      Your Name
+    <div class="container questrial">
+      <div class="row mb-2">
+        <div class="col-12">
+          <h1>Hi, Josiah Hans</h1>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-12">
+          <h5>Contact Information</h5>
+        </div>
+      </div>
+      <div class="row mb-1">
+        <div class="col-2">
+          <strong>Name</strong>
+        </div>
+        <div class="col-10">
+          Josiah Hans
+        </div>
+      </div>
+      <div class="row mb-1">
+        <div class="col-2">
+          <strong>Email</strong>
+        </div>
+        <div class="col-10">
+          Josiah.jhs@gmail.com
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <strong>Date of Birth</strong>
+        </div>
+        <div class="col-10">
+          2000-10-10
+        </div>
+      </div>
     </div>
+
+    <footer class="container-fluid fixed-bottom" id="socmed">
+      <div class="row d-flex justify-content-center bg-semi-dark">
+        <div>
+          <a href="https://youtu.be/deomF5JOTUg" target="_blank"><image class="socmed" src="icon/youtube.png"></a>
+          <a href="https://instagram.com/josiahhans_" target="_blank"><image class="socmed" src="icon/instagram.png"></a>
+          <a href="https://wa.me/+628991712772" target="_blank"><image class="socmed" src="icon/whatsapp.png"></a>
+          <a href="https://www.facebook.com/The.Kisaragi" target="_blank"><image class="socmed" src="icon/facebook.png"></a>
+        </div>
+      </div>
+      <div class="row text-white py-3 bg-dark">
+        <div class="container-fluid text-center footer-text">
+          ©Hazelquint.com - 2019 - JV
+        </div>
+      </div>
+    </footer>
+
 
 
     <!-- Optional JavaScript -->

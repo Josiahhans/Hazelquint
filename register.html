@@ -32,53 +32,104 @@
 
   </head>
   <body class="text-secondary ">
-  
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="nav-menu2 ml-auto d-lg-block d-none">
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand fredericka mx-auto" href="index.html">HAZEL QUINT<img src="img/logo.png" class="logo d-none d-lg-inline-block"></a>
+      <button class="navbar-toggler">
+        <img src="img/cart.png" alt="" class="cart">
+      </button>
+      <div class="collapse navbar-collapse questrial nav-menu" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active mr-3">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item active mr-3">
+            <a class="nav-link" href="shop.html">SHOP</a>
+          </li>
+          <li class="nav-item mr-3 ">
+            <a class="nav-link" href="login.html"><img src="img/user.png" class="user d-lg-block d-none"> <span class="d-lg-none d-block">USER</span> </a>
+          </li>
+          <li class="nav-item mr-3 d-lg-block d-none">
+            <a class="nav-link" href="cart.html"><img src="img/cart.png" alt="" class="cart2"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <h3 class="p-4 my-2 text-center">REGISTER</h3>
-    <div class="container d-flex">
-      <div class="col-6 mx-auto border  border-secondary py-5 px-5">
-        <form class="">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword4">Password</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-          </div>
-          <div class="form-group">
-            <label for="inputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="form-group col-md-4">
-              <label for="inputState">State</label>
-              <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-2">
-              <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-          </div>
+    <div class="container montserrat mt-5 text-black">
+      <div class="row d-flex">
+        <div class="col-10 mx-auto  border  border-secondary rounded">
+          <div class="row">
+            <div class="col-6 login-img2">
 
-          <button type="submit" class="btn btn-success container-fluid my-4">Register</button>
-        </form>
+            </div>
+            <div class="col-6 mx-auto py-5 px-5">
+              <div class="text-center mb-5">
+                <h3>Create an Account!</h3>
+              </div>
+              <form class="register" onsubmit="return valForm()" method="post">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Address 2</label>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="city">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="state" class="form-control">
+                      <option selected>Jakarta</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="zip">
+                  </div>
+                </div>
+                <a href="user.html" id="submit" class="btn btn-success container-fluid my-4">Register</a>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
+    <footer class="container-fluid mt-5" id="socmed">
+      <div class="row d-flex justify-content-center bg-semi-dark">
+        <div>
+          <a href="https://youtu.be/deomF5JOTUg" target="_blank"><image class="socmed" src="icon/youtube.png"></a>
+          <a href="https://instagram.com/josiahhans_" target="_blank"><image class="socmed" src="icon/instagram.png"></a>
+          <a href="https://wa.me/+628991712772" target="_blank"><image class="socmed" src="icon/whatsapp.png"></a>
+          <a href="https://www.facebook.com/The.Kisaragi" target="_blank"><image class="socmed" src="icon/facebook.png"></a>
+        </div>
+      </div>
+      <div class="row text-white py-3 bg-dark">
+        <div class="container-fluid text-center footer-text">
+          ©Hazelquint.com - 2019 - JV
+        </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

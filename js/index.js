@@ -1,11 +1,23 @@
 
 $(document).ready(function () {
+  //INI BUAT HAPUS PRELOADER SETELAH 2,9detik
+  $('html').css('overflow','hidden');
+
+  setTimeout(function(){
+    $('.preloader').remove();
+    $('html').css('overflow','scroll');
+  }, 2900);
+
+  //counter height
+  $(".counter").height($(".counter-count").height());
+
 
   var currentScrollPos = window.pageYOffset;
   var prevScrollpos = window.pageYOffset;
   if(currentScrollPos==0){
     $(".nav-up").css('opacity',"0");
   }
+
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
@@ -21,7 +33,7 @@ $(document).ready(function () {
 
 
 var navcounter=0;
-$(".navbar-button").click(function() {
+$(".navbar-button").click(function(){
   if(navcounter%2==0){
     $(".navbar-container").animate({
       right: '-50%',
@@ -46,33 +58,20 @@ $(".navbar-button").click(function() {
 });
 
 $(".navigation").click(function() {
-  if(navcounter%2==0){
     $(".navbar-container").animate({
-      right: '0%',
-      top: '0%',
-      opacity: '1'
-    }, "slow");
-    $(".navbar-button-img").attr("src","img/back.png");
-    navcounter++;
-    $('html').css('overflow','hidden');
-  }else{
-    $(".navbar-container").animate({
-      right: '-100%',
-      top: '-100%',
+      right: '-200%',
+      top: '-200%',
       opacity: '0'
     }, "slow");
     $(".navbar-button-img").attr("src","img/hamburger-white.png");
     $('html').css('overflow','scroll');
     navcounter++;
-  }
 });
 
 
   $(window).resize(function() {
-
       var h = $(window).height();
       var w = $(window).width();
-
       if(w>h){
         $(".hero-back").css({
               'background-size' : '100% auto'
@@ -82,12 +81,12 @@ $(".navigation").click(function() {
               'background-size' : 'auto 100%'
         });
       }
-
   });
 
+
+      var counted = 0;
+
   $(window).scroll(function() {
-
-
           var h = $(window).height();
           var w = $(window).width();
           var scrollPos = $(this).scrollTop();
@@ -187,7 +186,22 @@ $(".navigation").click(function() {
         var hero4section = $('.hero-back4').offset().top;
         var hero4size= 2*h;
 
+
         if(scrollPos>hero4section){
+          if(counted==0){
+            $('.counter-count').each(function () {
+                $(this).prop('Counter',0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 5000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+            counted=1;
+          }
           $(".open").css({
             'opacity' : (1-((scrollPos-hero4section)*6/hero4size))
           });
